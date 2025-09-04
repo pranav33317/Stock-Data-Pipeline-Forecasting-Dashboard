@@ -1,0 +1,16 @@
+# Copy to config.yaml and fill values
+api:
+  alpha_vantage_key: "YOUR_ALPHA_VANTAGE_KEY"
+  use_alpha_vantage: true
+database:
+  dialect: "sqlite"  # sqlite / postgres / mysql
+  sqlite_path: "./data/stocks.db"
+  host: "localhost"
+  port: 5432
+  user: "user"
+  password: "pass"
+  database: "stocks"
+pipeline:
+  tickers: ["NSE:TCS", "NSE:INFY"]
+  interval_minutes: 1
+  history_days: 365
